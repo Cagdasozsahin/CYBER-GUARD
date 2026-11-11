@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CYBER GUARD</title>
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="brand" class="panel">CYBER <span>GUARD</span></div>
+    <div id="res" class="panel"></div>
+    <div id="stats" class="panel"></div>
+    <div id="objective" class="panel"></div>
+    <div id="crosshair"></div>
+    <div id="breakbar"><div></div></div>
+    <div id="hotbar"></div>
+    <div id="helpbar" class="panel">WASD hareket · Shift koş · Space zıpla · Sol tık kır/ateş · Sağ tık yerleştir · 1-8 / tekerlek hotbar · Tab envanter · E kasa · ESC menü</div>
+    <div id="toast" class="panel"></div>
+    <div id="dmg"></div>
+  </div>
+
+  <div id="panelWrap" class="hidden">
+    <div id="panelBox" class="panel"></div>
+    <div id="cursorItem"></div>
+  </div>
+
+  <div id="overlay">
+    <div id="card" class="panel">
+      <div class="kicker">DIGITAL WORLD SURVIVAL</div>
+      <h1 id="menuTitle">CYBER GUARD</h1>
+      <div class="ver" id="menuVer">v0.2 · voxel</div>
+      <p id="menuText"></p>
+      <div id="zoneList"></div>
+      <div class="btns">
+        <button class="primary" id="btnPlay">OYUNA BAŞLA</button>
+        <button id="btnNew">Yeni oyun</button>
+        <button id="btnDelete">Kaydı sil</button>
+      </div>
+      <div class="small">WASD: hareket · Fare: kamera · Sol tık: kır / ateş · Sağ tık: yerleştir · Tab/I: envanter + üretim · E: kasa · ESC: duraklat</div>
+      <div class="small">Oyun tamamen tarayıcı sandbox'ında çalışır; gerçek dosyalarına dokunmaz. Kasada yalnızca kurgusal test verisi saklanır.</div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
